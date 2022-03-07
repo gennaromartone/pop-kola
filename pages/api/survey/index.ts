@@ -85,7 +85,7 @@ const handler = (req: NextApiRequest, res: NextApiResponse) => {
               return qData.id !== q.id
                 
             });
-            console.log(questions);
+            //console.log(questions);
             
             const index = surveyJson.survey.findIndex((s:Survey) => s.id === surveyId);
 
@@ -97,7 +97,7 @@ const handler = (req: NextApiRequest, res: NextApiResponse) => {
             res.status(200).json({status:'ok'});
 
           } catch (error) {
-            res.status(400).json({ success: false })
+            res.status(400).json({ success: error })
           }
           break
 
