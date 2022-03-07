@@ -1,0 +1,46 @@
+.section{
+    height: 100%;
+    width: 100%;
+}
+.slide{
+    padding:2rem;
+    display:grid;
+    grid-template-rows: 20% 30% 50%;
+    height: inherit;
+    align-items: center;
+    justify-items: center;
+}
+.h3Question{
+    color:#303b72;
+    text-align: center;
+}
+.h3Question + p{
+    color:#303b72;
+    text-align: center;
+    font-style: italic;
+    margin:0;
+}
+
+.progress{
+    width: 50vw;
+    height: 8px;
+}
+/* .progress:after {
+    position: absolute;
+    left: 50%;
+    top:0;
+    content:attr(value);
+} */
+
+.progressContainer{
+    width: auto;
+    height: 3rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em;
+    gap: 1rem;
+}

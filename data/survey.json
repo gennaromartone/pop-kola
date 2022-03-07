@@ -1,0 +1,26 @@
+{
+    "survey": [
+        {
+            "id": 0,
+            "countId": 0,
+            "questions": [
+                {
+                    "id": 0,
+                    "question": "Quanti anni hai?",
+                    "field": "input"
+                },
+                {
+                    "id": 2,
+                    "question": "Quando vai a un bar, cocktail bar, c’è qualche bibita che manca e non puoi ordinare?",
+                    "field": "area"
+                },
+                {
+                    "id": 1,
+                    "question": "Quante volte vai a bere fuori ( se si dove? Bar, Disco etc… )",
+                    "field": "area",
+                    "suggestion": "In una settimana quanti e quali locali frequenti"
+                }
+            ]
+        }
+    ]
+}
