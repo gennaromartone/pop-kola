@@ -1,7 +1,7 @@
 import { Question, Survey, SurveyData } from '@models/Survey';
 import { NextApiRequest, NextApiResponse } from 'next';
 import fs from 'fs';
-import _surveyJson from './../../../data/survey.json';
+import _surveyJson from './../../../public/survey.json';
 //const surveyJson:SurveyData = _surveyJson;
 const surveyJson = _surveyJson as unknown as SurveyData;
 
