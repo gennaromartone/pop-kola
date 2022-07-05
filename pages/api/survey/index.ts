@@ -46,7 +46,7 @@ const handler = (req: NextApiRequest, res: NextApiResponse) => {
               if(index && questions)
                 surveyJson.survey[index].questions = questions;
 
-                fs.writeFileSync('data/survey.json', JSON.stringify(surveyJson, null, 4));
+                fs.writeFileSync('public/survey.json', JSON.stringify(surveyJson, null, 4));
                 
             }
             else{
@@ -64,7 +64,7 @@ const handler = (req: NextApiRequest, res: NextApiResponse) => {
             }
             
                                                                               
-            fs.writeFileSync('data/survey.json', JSON.stringify(surveyJson, null, 4));
+            fs.writeFileSync('public/survey.json', JSON.stringify(surveyJson, null, 4));
 
             res.status(200).json({status:'ok'});
 
@@ -92,7 +92,7 @@ const handler = (req: NextApiRequest, res: NextApiResponse) => {
             if( index !== -1 && questions)
               surveyJson.survey[index].questions = questions;
                                                                               
-            fs.writeFileSync('data/survey.json', JSON.stringify(surveyJson, null, 4));
+            fs.writeFileSync('public/survey.json', JSON.stringify(surveyJson, null, 4));
 
             res.status(200).json({status:'ok'});
 
@@ -117,7 +117,7 @@ const handler = (req: NextApiRequest, res: NextApiResponse) => {
                 if( index !== -1 && s)
                   surveyJson.survey[index] = s;
                                                                                 
-              fs.writeFileSync('data/survey.json', JSON.stringify(surveyJson, null, 4));
+              fs.writeFileSync('public/survey.json', JSON.stringify(surveyJson, null, 4));
   
               res.status(200).json({status:'ok'});
   
